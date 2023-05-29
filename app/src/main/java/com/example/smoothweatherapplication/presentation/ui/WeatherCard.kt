@@ -40,7 +40,7 @@ fun WeatherCard(
         Card(
             backgroundColor = backgroundColor,
             shape = RoundedCornerShape(10.dp),
-            modifier = modifier.padding(16.dp)
+            modifier = modifier.padding(top = 16.dp, bottom = 4.dp, start = 16.dp, end = 16.dp)
         ) {
             Column(
                 modifier = Modifier
@@ -55,7 +55,7 @@ fun WeatherCard(
                     modifier = Modifier.align(Alignment.End),
                     color = Color.Black
                 )
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(4.dp))
                 Image(
                     painter = painterResource(id = data.weatherType.iconRes),
                     contentDescription = null,

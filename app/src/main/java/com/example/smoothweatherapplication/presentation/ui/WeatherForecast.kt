@@ -31,14 +31,14 @@ fun WeatherForecast(
         ) {
             Text(
                 text = "Today",
-                fontSize = 20.sp,
+                fontSize = 15.sp,
                 color = Color.Black
             )
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(4.dp))
             Card(
                 backgroundColor = LightBlue,
                 shape = RoundedCornerShape(10.dp),
-                modifier = modifier.padding(vertical = 8.dp, horizontal = 4.dp)
+                modifier = modifier.padding(vertical = 4.dp, horizontal = 4.dp)
             ) {
                 LazyRow(
                     content = {
@@ -51,6 +51,20 @@ fun WeatherForecast(
                             )
                         }
                     })
+            }
+            Spacer(modifier = Modifier.height(8.dp))
+            Card(
+                backgroundColor = LightBlue,
+                shape = RoundedCornerShape(10.dp),
+                modifier = modifier.padding(vertical = 4.dp, horizontal = 4.dp)
+            ) {
+                DailyWeatherDisplay(
+                    state = state,
+                    modifier = Modifier
+                        .height(100.dp)
+                        .padding(horizontal = 16.dp)
+                )
+
             }
         }
     }

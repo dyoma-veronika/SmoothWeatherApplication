@@ -21,3 +21,5 @@ where:
 
 
 The app shows the current weather in the device's location at the current time. It also provides hourly weather for the current day.
+
+![](https://github.com/dyoma-veronika/SmoothWeatherApplication/blob/master/Screenshot.png)
